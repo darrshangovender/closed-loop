@@ -11,6 +11,12 @@ All notable changes to this project are recorded here. The format follows
   provider state are now compared on every platform and the hash only on Windows. No code under
   `closed_loop/`, no result and no number in the README changed.
 
+### Known issue
+- On Linux with Python 3.11 (numpy 2.4.6, scipy 1.17.1), `test_cma_es_reaches_it_within_200_evaluations_on_some_seeds_and_random_search_on_none`
+  fails: CMA-ES reached the planted violation on 0 of 10 seeds, against 5 of 10 on Windows with
+  the same versions. Under investigation. The README now says the two full runs were on one Windows
+  laptop and have not been rerun elsewhere.
+
 ## [0.1.0] - 2026-11-15
 
 First public release. Everything in this repository is SYNTHETIC.
