@@ -3,6 +3,14 @@
 All notable changes to this project are recorded here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Fixed
+- CI on Linux: three golden-run tests compared a Windows-recorded hash of the replay intervals bit
+  for bit, and the last bit of exp and log can differ between platforms. The counts and the
+  provider state are now compared on every platform and the hash only on Windows. No code under
+  `closed_loop/`, no result and no number in the README changed.
+
 ## [0.1.0] - 2026-11-15
 
 First public release. Everything in this repository is SYNTHETIC.
