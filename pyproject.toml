@@ -1,0 +1,100 @@
+[project]
+name = "closed-loop"
+version = "0.1.0"
+description = "A safety-case lab for closed-loop predictive maintenance: a verified shield, a monitored coverage contract, causal diagnosis and a falsification search, on a SYNTHETIC simulated plant."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Darrshan Govender", email = "darrshangovender@gmail.com" }]
+keywords = [
+    "safety",
+    "shielding",
+    "conformal-prediction",
+    "runtime-verification",
+    "signal-temporal-logic",
+    "causal-inference",
+    "predictive-maintenance",
+    "falsification",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+# Core stays small on purpose: F0 and F1 (the proof and the policy comparison) run on these three.
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.6",
+    "hypothesis>=6.100",
+    "mypy>=1.10",
+]
+# The three sibling repositories, by direct URL only. A bare name would be resolved from PyPI,
+# where an attacker could register it (docs/adr/0001-architecture.md, section 14).
+# Add "@<tag>" to each URL once the owner tags a release; until then it tracks the default branch.
+# This repository is not published, and these references stop an accidental upload to PyPI.
+integration = [
+    "asset-health @ git+https://github.com/darrshangovender/asset-health",
+    "maintenance-agent @ git+https://github.com/darrshangovender/maintenance-agent",
+    "plant-copilot @ git+https://github.com/darrshangovender/plant-copilot",
+]
+
+[project.urls]
+Homepage = "https://github.com/darrshangovender/closed-loop"
+Repository = "https://github.com/darrshangovender/closed-loop"
+Issues = "https://github.com/darrshangovender/closed-loop/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Direct URL references are what keep the sibling extra safe, and hatchling refuses them by default.
+[tool.hatch.metadata]
+allow-direct-references = true
+
+# Distribution name "closed-loop", import name "closed_loop": name the package explicitly.
+[tool.hatch.build.targets.wheel]
+packages = ["closed_loop"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"
+pythonpath = ["."]
+markers = [
+    "f2: needs the three sibling repositories (asset-health, maintenance-agent, plant-copilot); skipped when absent",
+    "slow: takes more than about 20 s; leave out of a CI-sized run with -m 'not slow'",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+# The spikes are evidence: each script is committed beside the output it produced, so they are
+# recorded as run and not reformatted.
+extend-exclude = ["docs/adr/spikes"]
+
+[tool.ruff.format]
+# The code blocks in the decision records are sketches packed one class to a line so a reader
+# can see a whole interface at once; they are records of a decision, so they are left as written.
+exclude = ["docs/adr/*.md"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["closed_loop"]
+warn_unused_ignores = true

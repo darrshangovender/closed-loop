@@ -1,0 +1,43 @@
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+dist/
+build/
+.uv/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Internal working notes: never published ---
+docs/adr/progress/
+
+# --- Per-seed result cache written by sequential runs ---
+benchmarks/.cache/
+
+# --- Heavy-run lock file (integration/siblings.lock is tracked, so *.lock is not ignored) ---
+heavy-run.lock
+
+# --- Misc ---
+tmp/
+.scratch/

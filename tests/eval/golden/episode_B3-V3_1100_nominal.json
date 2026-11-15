@@ -1,0 +1,69 @@
+{
+ "allowed_crusher": [
+  0,
+  0
+ ],
+ "allowed_pumps": [
+  0,
+  0
+ ],
+ "arm": "B3-V3",
+ "attributions": [],
+ "commands_proposed": 87,
+ "condition": "nominal",
+ "contract": {
+  "checkpoints": 360,
+  "lives": 8,
+  "lives_miss_bin": 0,
+  "lives_miss_rul": 1,
+  "miss_bin": 0,
+  "miss_rul": 15,
+  "width_sum": 705
+ },
+ "cost": 5.795999979972839,
+ "coverage": {
+  "c": 1.0,
+  "c_lo": 1.0,
+  "c_lo_trend": 1.0,
+  "c_trend": 1.0,
+  "n": 193,
+  "n_blind": 167,
+  "n_total": 360,
+  "n_trend": 2
+ },
+ "crusher_restart_allowed": 0,
+ "crusher_stopped": 0,
+ "disagreements": {},
+ "fidelity": "F1",
+ "min_robustness": {
+  "P1": 1.0,
+  "P2": 30.0,
+  "P3": 15.0,
+  "P4": 0.5,
+  "P5": 610.25,
+  "P6": 1.0
+ },
+ "monitors": {
+  "inf": null,
+  "opt": null,
+  "pess": null,
+  "proxy": null
+ },
+ "n_checkpoints": 360,
+ "n_labels": 360,
+ "planned_jobs": 4,
+ "plant_violations": {},
+ "seed": 1100,
+ "shield_admitted": 0,
+ "shield_overrides": 0,
+ "throughput": 0.9898379630788608,
+ "unplanned_failures": 0,
+ "violations": {
+  "P1": 0,
+  "P2": 0,
+  "P3": 0,
+  "P4": 0,
+  "P5": 0,
+  "P6": 0
+ }
+}

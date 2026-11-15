@@ -1,0 +1,223 @@
+import asset_health pieces (this process): 23.6 s
+
+=== seed 3, logger clock OFF ===
+  rendered two 90-day records: 0.29 s
+  logger clock drift drawn: none
+  life 1 rows 955, life 2 rows 1131, gap rows (stopped, silent) 6
+  run_asset on the spliced record: 2.56 s
+  blocked=False  rows on grid=2160  repairs=[Timestamp('2026-11-10 06:00:00')]
+  segment 0: 2026-10-01 00:00:00 .. 2026-11-10 06:00:00  ready=True  baseline 2026-10-03 00:00:00 .. 2026-10-24 00:00:00
+  segment 1: 2026-11-10 06:00:00 .. 2026-12-29 23:00:01  ready=True  baseline 2026-11-12 06:00:00 .. 2026-12-03 06:00:00
+  first valid decision after the join: 2026-12-03 08:00:00  (554.0 h after the join)
+  inside the 21 d + 48 h window: fused finite rows=0, decision_valid rows=0
+  before the join, cusum    equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, iforest  equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, rule     equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, fused    equals the life-1-only run: True  (max diff 0.00e+00)
+  after the join,  cusum    equals the life-2-only run: False  (max diff 2.27e-01)
+  after the join,  iforest  equals the life-2-only run: False  (max diff 2.20e-01)
+  after the join,  rule     equals the life-2-only run: False  (max diff 9.22e-02)
+  after the join,  fused    equals the life-2-only run: False  (max diff 1.58e-01)
+  masks (valid flags) differing after the join: 12 rows, first 2026-11-12 04:00:00, last 2026-11-12 15:00:00
+  z24 rows differing after the join: 564, first 2026-12-03 13:00:00
+  before the join, mean z24 equals the life-1-only run: True (max diff 0.00e+00)
+  69 daily analyse_run calls: 4.8 s
+  daily analysis 2026-10-22 .. 2026-12-29: open on 6 days before the join, 6 days after it
+    first open before the join: 2026-11-05 00:00:00  unexplained_anomaly urgent
+    first open after the join:  2026-12-24 00:00:00  bearing_outer_race urgent
+    which is 43.8 days after the join
+    open inside the 23-day blind window of life 2 (phantom if > 0): 0
+
+=== seed 3, logger clock ON ===
+  rendered two 90-day records: 0.23 s
+  logger clock drift drawn: none
+  life 1 rows 955, life 2 rows 1131, gap rows (stopped, silent) 6
+  run_asset on the spliced record: 2.11 s
+  blocked=False  rows on grid=2160  repairs=[Timestamp('2026-11-10 06:00:00')]
+  segment 0: 2026-10-01 00:00:00 .. 2026-11-10 06:00:00  ready=True  baseline 2026-10-03 00:00:00 .. 2026-10-24 00:00:00
+  segment 1: 2026-11-10 06:00:00 .. 2026-12-29 23:00:01  ready=True  baseline 2026-11-12 06:00:00 .. 2026-12-03 06:00:00
+  first valid decision after the join: 2026-12-03 08:00:00  (554.0 h after the join)
+  inside the 21 d + 48 h window: fused finite rows=0, decision_valid rows=0
+  before the join, cusum    equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, iforest  equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, rule     equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, fused    equals the life-1-only run: True  (max diff 0.00e+00)
+  after the join,  cusum    equals the life-2-only run: False  (max diff 2.27e-01)
+  after the join,  iforest  equals the life-2-only run: False  (max diff 2.20e-01)
+  after the join,  rule     equals the life-2-only run: False  (max diff 9.22e-02)
+  after the join,  fused    equals the life-2-only run: False  (max diff 1.58e-01)
+  masks (valid flags) differing after the join: 12 rows, first 2026-11-12 04:00:00, last 2026-11-12 15:00:00
+  z24 rows differing after the join: 564, first 2026-12-03 13:00:00
+  before the join, mean z24 equals the life-1-only run: True (max diff 0.00e+00)
+  69 daily analyse_run calls: 4.6 s
+  daily analysis 2026-10-22 .. 2026-12-29: open on 6 days before the join, 6 days after it
+    first open before the join: 2026-11-05 00:00:00  unexplained_anomaly urgent
+    first open after the join:  2026-12-24 00:00:00  bearing_outer_race urgent
+    which is 43.8 days after the join
+    open inside the 23-day blind window of life 2 (phantom if > 0): 0
+
+=== seed 5, logger clock OFF ===
+  rendered two 90-day records: 0.32 s
+  logger clock drift drawn: none
+  life 1 rows 864, life 2 rows 1117, gap rows (stopped, silent) 6
+  run_asset on the spliced record: 2.13 s
+  blocked=False  rows on grid=2160  repairs=[Timestamp('2026-11-10 06:00:00')]
+  segment 0: 2026-10-01 00:00:00 .. 2026-11-10 06:00:00  ready=True  baseline 2026-10-03 00:00:00 .. 2026-10-24 00:00:00
+  segment 1: 2026-11-10 06:00:00 .. 2026-12-29 23:00:01  ready=True  baseline 2026-11-12 06:00:00 .. 2026-12-03 06:00:00
+  first valid decision after the join: 2026-12-03 08:00:00  (554.0 h after the join)
+  inside the 21 d + 48 h window: fused finite rows=0, decision_valid rows=0
+  before the join, cusum    equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, iforest  equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, rule     equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, fused    equals the life-1-only run: True  (max diff 0.00e+00)
+  after the join,  cusum    equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  iforest  equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  rule     equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  fused    equals the life-2-only run: True  (max diff 0.00e+00)
+  masks (valid flags) differing after the join: 0 rows
+  z24 rows differing after the join: 0
+  before the join, mean z24 equals the life-1-only run: True (max diff 0.00e+00)
+  69 daily analyse_run calls: 3.8 s
+  daily analysis 2026-10-22 .. 2026-12-29: open on 0 days before the join, 6 days after it
+    first open after the join:  2026-12-24 00:00:00  bearing_outer_race urgent
+    which is 43.8 days after the join
+    open inside the 23-day blind window of life 2 (phantom if > 0): 0
+
+=== seed 5, logger clock ON ===
+  rendered two 90-day records: 0.41 s
+  logger clock drift drawn: ['drift +74 s/day, 3 step(s)']
+  life 1 rows 863, life 2 rows 1117, gap rows (stopped, silent) 6
+  run_asset on the spliced record: 2.57 s
+  blocked=False  rows on grid=2159  repairs=[Timestamp('2026-11-10 06:00:00')]
+  segment 0: 2026-10-01 00:00:00 .. 2026-11-10 06:00:00  ready=True  baseline 2026-10-03 00:00:00 .. 2026-10-24 00:00:00
+  segment 1: 2026-11-10 06:00:00 .. 2026-12-29 22:00:01  ready=True  baseline 2026-11-12 06:00:00 .. 2026-12-03 06:00:00
+  first valid decision after the join: 2026-12-03 08:00:00  (554.0 h after the join)
+  inside the 21 d + 48 h window: fused finite rows=0, decision_valid rows=0
+  before the join, cusum    equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, iforest  equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, rule     equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, fused    equals the life-1-only run: True  (max diff 0.00e+00)
+  after the join,  cusum    equals the life-2-only run: False  (max diff 1.02e-01)
+  after the join,  iforest  equals the life-2-only run: False  (max diff 9.60e-01)
+  after the join,  rule     equals the life-2-only run: False  (max diff 2.31e+00)
+  after the join,  fused    equals the life-2-only run: False  (max diff 6.48e-01)
+  masks (valid flags) differing after the join: 60 rows, first 2026-11-12 22:00:00, last 2026-12-29 21:00:00
+  z24 rows differing after the join: 578, first 2026-12-03 13:00:00
+  before the join, mean z24 equals the life-1-only run: True (max diff 0.00e+00)
+  69 daily analyse_run calls: 3.9 s
+  daily analysis 2026-10-22 .. 2026-12-29: open on 0 days before the join, 6 days after it
+    first open after the join:  2026-12-24 00:00:00  bearing_outer_race urgent
+    which is 43.8 days after the join
+    open inside the 23-day blind window of life 2 (phantom if > 0): 0
+
+=== seed 8, logger clock OFF ===
+  rendered two 90-day records: 0.42 s
+  logger clock drift drawn: none
+  life 1 rows 848, life 2 rows 1141, gap rows (stopped, silent) 6
+  run_asset on the spliced record: 2.88 s
+  blocked=False  rows on grid=2160  repairs=[Timestamp('2026-11-10 06:00:00')]
+  segment 0: 2026-10-01 00:00:00 .. 2026-11-10 06:00:00  ready=True  baseline 2026-10-03 00:00:00 .. 2026-10-24 00:00:00
+  segment 1: 2026-11-10 06:00:00 .. 2026-12-29 23:00:01  ready=True  baseline 2026-11-12 06:00:00 .. 2026-12-03 06:00:00
+  first valid decision after the join: 2026-12-03 08:00:00  (554.0 h after the join)
+  inside the 21 d + 48 h window: fused finite rows=0, decision_valid rows=0
+  before the join, cusum    equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, iforest  equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, rule     equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, fused    equals the life-1-only run: True  (max diff 0.00e+00)
+  after the join,  cusum    equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  iforest  equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  rule     equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  fused    equals the life-2-only run: True  (max diff 0.00e+00)
+  masks (valid flags) differing after the join: 0 rows
+  z24 rows differing after the join: 0
+  before the join, mean z24 equals the life-1-only run: True (max diff 0.00e+00)
+  69 daily analyse_run calls: 4.3 s
+  daily analysis 2026-10-22 .. 2026-12-29: open on 2 days before the join, 3 days after it
+    first open before the join: 2026-11-09 00:00:00  impeller_wear urgent
+    first open after the join:  2026-12-27 00:00:00  bearing_generic urgent
+    which is 46.8 days after the join
+    open inside the 23-day blind window of life 2 (phantom if > 0): 0
+
+=== seed 8, logger clock ON ===
+  rendered two 90-day records: 0.41 s
+  logger clock drift drawn: ['drift +70 s/day, 2 step(s)']
+  life 1 rows 847, life 2 rows 1141, gap rows (stopped, silent) 6
+  run_asset on the spliced record: 2.51 s
+  blocked=False  rows on grid=2159  repairs=[Timestamp('2026-11-10 06:00:00')]
+  segment 0: 2026-10-01 00:00:00 .. 2026-11-10 06:00:00  ready=True  baseline 2026-10-03 00:00:00 .. 2026-10-24 00:00:00
+  segment 1: 2026-11-10 06:00:00 .. 2026-12-29 22:00:01  ready=True  baseline 2026-11-12 06:00:00 .. 2026-12-03 06:00:00
+  first valid decision after the join: 2026-12-03 08:00:00  (554.0 h after the join)
+  inside the 21 d + 48 h window: fused finite rows=0, decision_valid rows=0
+  before the join, cusum    equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, iforest  equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, rule     equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, fused    equals the life-1-only run: True  (max diff 0.00e+00)
+  after the join,  cusum    equals the life-2-only run: False  (max diff 4.74e-02)
+  after the join,  iforest  equals the life-2-only run: False  (max diff 8.93e-01)
+  after the join,  rule     equals the life-2-only run: False  (max diff 8.96e-01)
+  after the join,  fused    equals the life-2-only run: False  (max diff 2.75e-01)
+  masks (valid flags) differing after the join: 64 rows, first 2026-11-11 08:00:00, last 2026-12-29 15:00:00
+  z24 rows differing after the join: 505, first 2026-12-03 13:00:00
+  before the join, mean z24 equals the life-1-only run: True (max diff 0.00e+00)
+  69 daily analyse_run calls: 5.2 s
+  daily analysis 2026-10-22 .. 2026-12-29: open on 2 days before the join, 3 days after it
+    first open before the join: 2026-11-09 00:00:00  impeller_wear urgent
+    first open after the join:  2026-12-27 00:00:00  bearing_generic urgent
+    which is 46.8 days after the join
+    open inside the 23-day blind window of life 2 (phantom if > 0): 0
+
+=== seed 11, logger clock OFF ===
+  rendered two 90-day records: 0.43 s
+  logger clock drift drawn: none
+  life 1 rows 957, life 2 rows 1133, gap rows (stopped, silent) 6
+  run_asset on the spliced record: 3.17 s
+  blocked=False  rows on grid=2160  repairs=[Timestamp('2026-11-10 06:00:00')]
+  segment 0: 2026-10-01 00:00:00 .. 2026-11-10 06:00:00  ready=True  baseline 2026-10-03 00:00:00 .. 2026-10-24 00:00:00
+  segment 1: 2026-11-10 06:00:00 .. 2026-12-29 23:00:01  ready=True  baseline 2026-11-12 06:00:00 .. 2026-12-03 06:00:00
+  first valid decision after the join: 2026-12-04 16:00:00  (586.0 h after the join)
+  inside the 21 d + 48 h window: fused finite rows=0, decision_valid rows=0
+  before the join, cusum    equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, iforest  equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, rule     equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, fused    equals the life-1-only run: True  (max diff 0.00e+00)
+  after the join,  cusum    equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  iforest  equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  rule     equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  fused    equals the life-2-only run: True  (max diff 0.00e+00)
+  masks (valid flags) differing after the join: 0 rows
+  z24 rows differing after the join: 0
+  before the join, mean z24 equals the life-1-only run: True (max diff 0.00e+00)
+  69 daily analyse_run calls: 5.6 s
+  daily analysis 2026-10-22 .. 2026-12-29: open on 3 days before the join, 8 days after it
+    first open before the join: 2026-11-08 00:00:00  impeller_wear urgent
+    first open after the join:  2026-12-22 00:00:00  bearing_outer_race urgent
+    which is 41.8 days after the join
+    open inside the 23-day blind window of life 2 (phantom if > 0): 0
+
+=== seed 11, logger clock ON ===
+  rendered two 90-day records: 0.47 s
+  logger clock drift drawn: ['drift +82 s/day, 0 step(s)', 'drift -34 s/day, 2 step(s)']
+  life 1 rows 956, life 2 rows 1132, gap rows (stopped, silent) 6
+  run_asset on the spliced record: 3.53 s
+  blocked=False  rows on grid=2159  repairs=[Timestamp('2026-11-10 06:00:00')]
+  segment 0: 2026-10-01 00:00:00 .. 2026-11-10 06:00:00  ready=True  baseline 2026-10-03 00:00:00 .. 2026-10-24 00:00:00
+  segment 1: 2026-11-10 06:00:00 .. 2026-12-29 22:00:01  ready=True  baseline 2026-11-12 06:00:00 .. 2026-12-03 06:00:00
+  first valid decision after the join: 2026-12-04 15:00:00  (585.0 h after the join)
+  inside the 21 d + 48 h window: fused finite rows=0, decision_valid rows=0
+  before the join, cusum    equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, iforest  equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, rule     equals the life-1-only run: True  (max diff 0.00e+00)
+  before the join, fused    equals the life-1-only run: True  (max diff 0.00e+00)
+  after the join,  cusum    equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  iforest  equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  rule     equals the life-2-only run: True  (max diff 0.00e+00)
+  after the join,  fused    equals the life-2-only run: True  (max diff 0.00e+00)
+  masks (valid flags) differing after the join: 0 rows
+  z24 rows differing after the join: 0
+  before the join, mean z24 equals the life-1-only run: True (max diff 0.00e+00)
+  69 daily analyse_run calls: 5.2 s
+  daily analysis 2026-10-22 .. 2026-12-29: open on 3 days before the join, 8 days after it
+    first open before the join: 2026-11-08 00:00:00  impeller_wear urgent
+    first open after the join:  2026-12-22 00:00:00  bearing_outer_race urgent
+    which is 41.8 days after the join
+    open inside the 23-day blind window of life 2 (phantom if > 0): 0

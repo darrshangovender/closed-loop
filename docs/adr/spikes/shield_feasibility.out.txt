@@ -1,0 +1,10 @@
+crusher raw states 1728, winning region 1692, solve 0.79 s
+observable abstract states in W: 432
+mean number of safe actions per winning state: 6.08 of 14
+initial state in W: True
+max |B|=1: shield entries 1692, deadlocks 0, reachable product states 200, checker findings none; mean safe actions at |B|=1: 6.08
+max |B|=2: shield entries 2988, deadlocks 0, reachable product states 496, checker findings none; mean safe actions at |B|=2: 5.89
+max |B|=3: shield entries 3852, deadlocks 0, reachable product states 792, checker findings none; mean safe actions at |B|=3: 5.72
+max |B|=4: shield entries 4284, deadlocks 0, reachable product states 992, checker findings none; mean safe actions at |B|=4: 5.22
+sabotage (BEGIN admitted on a LOCKED, unproven asset) detected: True
+pump pair raw states 400, winning region 256, joint actions 49, solve 0.29 s

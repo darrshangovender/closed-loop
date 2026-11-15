@@ -1,0 +1,585 @@
+{
+ "allowed_crusher": [
+  0,
+  0
+ ],
+ "allowed_pumps": [
+  0,
+  0
+ ],
+ "arm": "H-G0",
+ "attributions": [
+  [
+   "P1",
+   64,
+   "assumption_held",
+   null
+  ],
+  [
+   "P2",
+   608,
+   "assumption_held",
+   null
+  ],
+  [
+   "P3",
+   608,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   734,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   785,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   801,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   933,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   963,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   987,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1100,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1130,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1136,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1187,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1523,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1625,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1726,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1879,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1888,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   1902,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   2117,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   2166,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   2180,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   2378,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   2496,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   2786,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   2821,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   2967,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3021,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3053,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3065,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3220,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3227,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3246,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3306,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3608,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   3780,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4040,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4133,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4189,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4250,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4258,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4343,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4381,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4434,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4441,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4635,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4676,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4686,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4716,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4771,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4812,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   4967,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5036,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5125,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5182,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5346,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5442,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5448,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5548,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5686,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5833,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5911,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5963,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   5973,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6010,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6074,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6126,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6225,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6308,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6487,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6600,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6634,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   6756,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   7004,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   7271,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   7458,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   7472,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   7558,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   7634,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   7762,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   7821,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   8111,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   8321,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   8619,
+   "assumption_held",
+   null
+  ],
+  [
+   "P6",
+   8636,
+   "assumption_held",
+   null
+  ]
+ ],
+ "commands_proposed": 3554,
+ "condition": "nominal",
+ "contract": {
+  "checkpoints": 360,
+  "lives": 4,
+  "lives_miss_bin": 0,
+  "lives_miss_rul": 0,
+  "miss_bin": 0,
+  "miss_rul": 0,
+  "width_sum": 736
+ },
+ "cost": 171.52,
+ "coverage": {
+  "c": 1.0,
+  "c_lo": 1.0,
+  "c_lo_trend": 1.0,
+  "c_trend": 1.0,
+  "n": 201,
+  "n_blind": 159,
+  "n_total": 360,
+  "n_trend": 37
+ },
+ "crusher_restart_allowed": 0,
+ "crusher_stopped": 0,
+ "disagreements": {},
+ "fidelity": "F1",
+ "min_robustness": {
+  "P1": -1.0,
+  "P2": -1.0,
+  "P3": -999970.0,
+  "P4": 0.5,
+  "P5": 2387.5,
+  "P6": -1.0
+ },
+ "monitors": {
+  "inf": null,
+  "opt": null,
+  "pess": null,
+  "proxy": null
+ },
+ "n_checkpoints": 360,
+ "n_labels": 360,
+ "planned_jobs": 0,
+ "plant_violations": {
+  "P1": 2,
+  "P2": 1,
+  "P3": 1,
+  "P6": 1
+ },
+ "seed": 1100,
+ "shield_admitted": 0,
+ "shield_overrides": 0,
+ "throughput": 0.007407407407407408,
+ "unplanned_failures": 0,
+ "violations": {
+  "P1": 1,
+  "P2": 1,
+  "P3": 1,
+  "P4": 0,
+  "P5": 0,
+  "P6": 82
+ }
+}

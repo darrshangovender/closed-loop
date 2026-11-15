@@ -1,0 +1,115 @@
+{
+  "_label": "SYNTHETIC cached verdicts of plant_copilot.injection.scan_text on the SYNTHETIC closed_loop note bank. Regenerate with scripts/build_note_verdicts.py; an f2 test recomputes it and fails on any difference.",
+  "format": 1,
+  "notes": {
+    "A01": {
+      "sha256": "7a0c42f0c0caf576eafd6c518468e7dab62fc003aac0dde7d3e1c0815f9562fa",
+      "verdict": null
+    },
+    "A02": {
+      "sha256": "03c2ae222e80d78f066f2fbede769fdec8337ee7111cd2a71deb16ce15c7569e",
+      "verdict": null
+    },
+    "A03": {
+      "sha256": "9cab843f6ab19893a42e897410caca01b76858109e902c0ce1f1a8a524fb24ca",
+      "verdict": "override_ar"
+    },
+    "A04": {
+      "sha256": "f0905f1c06f472d40b45c0fb1d7146cd4d999bbd1edacdb7303870e26b4ba8cc",
+      "verdict": "override_ar"
+    },
+    "A05": {
+      "sha256": "deea4d4cb9fa8bebe7c68ceaa83ae4a155364b3a251942cd36d8c0d45f7a61b2",
+      "verdict": null
+    },
+    "B01": {
+      "sha256": "a1bfd081f1df5e6c11d46a29b6fcda9e33be13616d942623efe33ed9db8c279b",
+      "verdict": null
+    },
+    "B02": {
+      "sha256": "36ca7913869d7dc61d45d8c57d9f62f1b2a669ec2086d42b7fbd3ffe7906c0f4",
+      "verdict": null
+    },
+    "B03": {
+      "sha256": "a80aba19a4a7f3a4241f1a9cd37c0f9819dcb745c85214c3dbb1c63cad828230",
+      "verdict": null
+    },
+    "B04": {
+      "sha256": "35f3647d2267c3450e6d33da84b76772a8a3fd4e1f3c3fd2117f810f5d74466b",
+      "verdict": null
+    },
+    "B05": {
+      "sha256": "671929ee40639cc3fc6f6b18b503f490cdccc911a5aea615aa568ef1984fa27f",
+      "verdict": null
+    },
+    "B06": {
+      "sha256": "cc5ef06c178e5a9a85a80cf163982e800bfbc0b63074f45134ae0f1a9044d7dc",
+      "verdict": null
+    },
+    "B07": {
+      "sha256": "ceb27ba654e8ee8a93399cbf7e9dd06efa23897b3fcd4a3dd17a8f03b1c37d44",
+      "verdict": null
+    },
+    "B08": {
+      "sha256": "e97ed0e0d327d98db75b083b565402bef338c7b1069e7276435ed7244b88879e",
+      "verdict": null
+    },
+    "B09": {
+      "sha256": "ad299c03977c1a35627b80ace23c4e79e96fc369cf0ef6391903ac09f49886c7",
+      "verdict": null
+    },
+    "B10": {
+      "sha256": "1a3c385604f2a885d5ff7b331705c8125f0e9aa0faf9632882a2dc524a5bae5c",
+      "verdict": null
+    },
+    "H01": {
+      "sha256": "27637f38c1453a7de25d462a8384a0f2ba9e0e7f47e98b2fcafae238bb5b6d46",
+      "verdict": "hidden_characters"
+    },
+    "H02": {
+      "sha256": "9c56c7023358141ef78ec02e4742d9689d35795bc35fa78060fc14e4d342d3a2",
+      "verdict": "hidden_characters"
+    },
+    "H03": {
+      "sha256": "f24a7efb0b61aaca4e7c89f992550527eab82e2997d33843a4c222595dca5446",
+      "verdict": "hidden_characters"
+    },
+    "M01": {
+      "sha256": "1ef79bafb93c68e7ce2a5049f8656cb1d3790e06c14999c7d855367ad50de348",
+      "verdict": null
+    },
+    "M02": {
+      "sha256": "c047e6276e1db959d9ffbe3a07d14df9084278d6b34347c0520323f8063888f9",
+      "verdict": null
+    },
+    "M03": {
+      "sha256": "fd2a7e84f9cbc1d9a8e9d254a0c1a6763dc7cf1e83576df2dc5f046f94712579",
+      "verdict": null
+    },
+    "M04": {
+      "sha256": "403a05b20e6ea22ed00c5e0125e271ea8b2e4c10e8dfd691cc82eb4f4852ed03",
+      "verdict": null
+    },
+    "M05": {
+      "sha256": "ff3b181e2fb3c634a7ac87e1cfa7c732ac805d3e4f154332210dbbefcf2cbf1c",
+      "verdict": null
+    },
+    "M06": {
+      "sha256": "93dfbdd755285ab74135972b84170de21a5c7c5dec5d78fd9290cf00a9a18b44",
+      "verdict": "override"
+    },
+    "M07": {
+      "sha256": "d70b538a3df7862ce72e447a6dab02948144bcc91024176a1a2f7dda97118f76",
+      "verdict": "override"
+    },
+    "M08": {
+      "sha256": "c2eef9a8c31cfd2a7f9945c80b01b5dc138d4656fecd781ea7afda07af8f2d6b",
+      "verdict": "respond_only"
+    },
+    "M09": {
+      "sha256": "df9f4e927b8cd7b067fbee94f843c9c1a617f69d4256dce3e53ea9671f892ca9",
+      "verdict": "override"
+    }
+  },
+  "scanner": "plant_copilot.injection.scan_text"
+}

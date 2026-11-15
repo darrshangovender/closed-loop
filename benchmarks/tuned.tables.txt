@@ -1,0 +1,51 @@
+Primary perception variant (P0, shifted, N = 256): highest mean c_e^lo, ties by width
+   variant    c_e^lo  width (bins)  n
+        V2    0.9355         2.094  40
+        V3    0.9328         2.115  40
+        V4    0.9415         2.169  40
+        V5    0.9190         2.065  40
+       V2L    0.9423         2.145  40  <- chosen
+       V3L    0.9382         2.148  40
+
+B3 k (days), B3 with V2L: minimum mean M-COST over dev nominal episodes
+          k_b3   mean M-COST       interval (0.05)     u_e    jobs  n
+          0.25        0.0267  [0.0000, 0.2200]   0.000    3.77  40  <- chosen
+           0.5        0.0271  [0.0000, 0.2210]   0.000    3.83  40
+             1        0.0273  [0.0000, 0.2210]   0.000    3.85  40
+             2        0.0296  [0.0000, 0.2230]   0.025    3.95  40
+             3        0.0297  [0.0000, 0.2230]   0.025    3.98  40
+             5        0.0285  [0.0000, 0.2220]   0.000    4.00  40
+             7        0.0301  [0.0000, 0.2240]   0.025    4.03  40
+            10        0.0326  [0.0000, 0.2260]   0.050    4.17  40
+            14        0.0330  [0.0000, 0.2270]   0.050    4.28  40
+
+B2 limit on the health index: minimum mean M-COST over dev nominal episodes
+      b2_limit   mean M-COST       interval (0.05)     u_e    jobs  n
+             4        0.0954  [0.0000, 0.2910]   0.600    3.25  40
+             5        0.0953  [0.0000, 0.2910]   0.650    2.92  40
+           5.5        0.0957  [0.0000, 0.2920]   0.675    2.80  40
+             6        0.0952  [0.0000, 0.2910]   0.675    2.75  40  <- chosen
+             7        0.1015  [0.0000, 0.2980]   0.850    2.67  40
+
+B1 interval, fraction of the characteristic life: minimum mean M-COST over dev nominal episodes
+   b1_fraction   mean M-COST       interval (0.05)     u_e    jobs  n
+           0.3        0.1228  [0.0000, 0.3190]   0.650    6.95  40
+           0.5        0.1059  [0.0000, 0.3010]   0.550    5.00  40  <- chosen
+           0.7        0.1171  [0.0000, 0.3140]   0.975    4.00  40
+           0.9        0.1934  [0.0000, 0.3910]   2.725    2.50  40
+
+Planner delta_plan (P0, N = 256): minimum mean M-COST
+    delta_plan   mean M-COST       interval (0.05)     u_e    jobs  n
+         0.005        0.0215  [0.0000, 0.2150]   0.050    2.48  40
+          0.01        0.0208  [0.0000, 0.2150]   0.050    2.45  40
+          0.02        0.0208  [0.0000, 0.2150]   0.050    2.45  40  <- chosen
+          0.05        0.0208  [0.0000, 0.2150]   0.050    2.45  40
+           0.1        0.0208  [0.0000, 0.2150]   0.050    2.45  40
+
+Monitor mode (P1, dev): highest detection minus false alarm, ties to lower false alarm
+      mode   false alarm   detection     score
+       opt     0 of 40      0 of 40     0.0000
+      pess     4 of 40      5 of 40     0.0250  <- chosen
+       inf     0 of 40      0 of 40     0.0000
+     proxy     2 of 40      2 of 40     0.0000
+

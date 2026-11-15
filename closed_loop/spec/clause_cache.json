@@ -1,0 +1,70 @@
+{
+  "entries": {
+    "2026-01-01": {
+      "alarm": {
+        "clause": "4.4",
+        "doc_id": "CORP-HSE-002",
+        "ignored": [],
+        "key": "alarm",
+        "language": "en",
+        "question": "What must entrants do when a gas alarm sounds in a confined space?",
+        "revision": 2,
+        "text": "If any gas alarm sounds, all entrants shall leave the space immediately."
+      },
+      "permit": {
+        "clause": "4.1",
+        "doc_id": "CORP-HSE-004",
+        "ignored": [],
+        "key": "permit",
+        "language": "en",
+        "question": "How long is a work permit valid?",
+        "revision": 6,
+        "text": "A permit is valid for a maximum of 12 hours and shall not extend beyond the end of the shift in which it was issued."
+      },
+      "retest": {
+        "clause": "4.3",
+        "doc_id": "CORP-HSE-002",
+        "ignored": [],
+        "key": "retest",
+        "language": "en",
+        "question": "How often must the atmosphere in a confined space be re-tested?",
+        "revision": 2,
+        "text": "The atmosphere shall be re-tested at least every 2 hours while persons are inside the space."
+      }
+    },
+    "2026-10-01": {
+      "alarm": {
+        "clause": "4.4",
+        "doc_id": "CORP-HSE-002",
+        "ignored": [],
+        "key": "alarm",
+        "language": "en",
+        "question": "What must entrants do when a gas alarm sounds in a confined space?",
+        "revision": 3,
+        "text": "If any gas alarm sounds, all entrants shall leave the space immediately."
+      },
+      "permit": {
+        "clause": "4.1",
+        "doc_id": "CORP-HSE-004",
+        "ignored": [],
+        "key": "permit",
+        "language": "en",
+        "question": "How long is a work permit valid?",
+        "revision": 6,
+        "text": "A permit is valid for a maximum of 12 hours and shall not extend beyond the end of the shift in which it was issued."
+      },
+      "retest": {
+        "clause": "4.3",
+        "doc_id": "CORP-HSE-002",
+        "ignored": [],
+        "key": "retest",
+        "language": "en",
+        "question": "How often must the atmosphere in a confined space be re-tested?",
+        "revision": 3,
+        "text": "The atmosphere shall be monitored continuously while persons are inside, and re-tested every 30 minutes and after any break in work longer than 15 minutes."
+      }
+    }
+  },
+  "note": "SYNTHETIC: clauses from the bundled plant-copilot corpus, no real procedure",
+  "synthetic": true
+}

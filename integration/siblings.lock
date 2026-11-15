@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "status": "pinned by tree hash (no tags or commits exist)",
+  "note": "The siblings have no tags and no git history locally, so there is no commit to pin: each one is pinned by its installed version and a tree hash of the installed package (hash_method). `python scripts/hash_siblings.py --check` compares the install with this file and `--write` refreshes it after a deliberate upgrade; ref stays null until the owner tags releases. The installed copies were identical to the repository sources on 1 Nov 2026 (plant-copilot ships its corpus inside the wheel as _corpus and an extra _gold/gold.jsonl).",
+  "hash_method": "sha256 of a sorted manifest of '<sha256 of file, CRLF as LF>  <posix path relative to the folder holding the package>' lines, over all files under the installed package folder except __pycache__ and *.pyc",
+  "siblings": {
+    "asset-health": {
+      "source": "git+https://github.com/darrshangovender/asset-health",
+      "ref": null,
+      "version": "0.1.1",
+      "tree_sha256": "fe8884740fa9fb1dc6f92a133ee58e0a1dc61748cbd10422ac1aca47cfe89bc9",
+      "files": 54
+    },
+    "maintenance-agent": {
+      "source": "git+https://github.com/darrshangovender/maintenance-agent",
+      "ref": null,
+      "version": "0.1.1",
+      "tree_sha256": "23bd86c3631abfa43c663efd0a928b8d862a8f4780e0de8f72d7cdfc8aeae0fa",
+      "files": 39
+    },
+    "plant-copilot": {
+      "source": "git+https://github.com/darrshangovender/plant-copilot",
+      "ref": null,
+      "version": "0.1.1",
+      "tree_sha256": "5c8a55f8ad68f8e12de8a4f666ed09d1d6097ac99108285c8cf6bed5b86dfa19",
+      "files": 64
+    }
+  }
+}

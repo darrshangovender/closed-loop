@@ -1,0 +1,29 @@
+import closed_loop pieces: 1.5 s (siblings are imported lazily)
+import asset_health.pipeline (first sibling call): 17.1 s
+import maintenance_agent.orchestrator: 0.4 s
+procedure store (signed library, once per process): 0.02 s
+
+copilot (plant-copilot): clause specification and injection screening
+  import plant_copilot.injection: 0.4 s
+  spec_from_cache (the F0/F1 path): 0.78 ms
+  spec_from_copilot live, first ask incl. corpus load: 0.85 s; again: 0.80 s
+  scan_text over the 27-note bank: 6.1 ms (0.22 ms per note)
+
+composed episodes (real asset-health, maintenance-agent and plant code)
+  seed 1: total 14.2 s = pipeline 11.1 (8 run_asset) + analysis 0.9 (14 analyse_run) + agent 0.33 + human 0.19 + render 1.73; lives 8, alerts 4, releases 4, rejects 0, no-interval 0
+  seed 2: total 14.4 s = pipeline 11.7 (8 run_asset) + analysis 0.5 (10 analyse_run) + agent 0.36 + human 0.20 + render 1.64; lives 8, alerts 4, releases 4, rejects 0, no-interval 0
+  seed 3: total 15.0 s = pipeline 12.2 (8 run_asset) + analysis 0.7 (15 analyse_run) + agent 0.31 + human 0.20 + render 1.57; lives 8, alerts 4, releases 4, rejects 0, no-interval 0
+  seed 4: total 13.6 s = pipeline 10.7 (8 run_asset) + analysis 0.7 (17 analyse_run) + agent 0.43 + human 0.19 + render 1.55; lives 8, alerts 4, releases 4, rejects 0, no-interval 0
+  seed 5: total 12.6 s = pipeline 10.2 (7 run_asset) + analysis 0.6 (15 analyse_run) + agent 0.24 + human 0.15 + render 1.35; lives 7, alerts 3, releases 3, rejects 0, no-interval 0
+
+process CPU seconds per wall second over the episodes: 0.96 (near 1.0: the process had a core to itself; lower: the machine was shared)
+summary over seeds (seconds per episode)
+  total     mean  13.96  min  12.61  max  14.95
+  pipeline  mean  11.20  min  10.24  max  12.23
+  analysis  mean   0.67  min   0.46  max   0.90
+  agent     mean   0.34  min   0.24  max   0.43
+  human     mean   0.19  min   0.15  max   0.20
+  render    mean   1.57  min   1.35  max   1.73
+  copilot   about 61 ms (270 notes screened live at the rate above; the clause specification comes from the cache)
+  run_asset per call, mean: 1.44 s, 7.8 calls per episode
+  analyse_run calls per episode, mean: 14.2

@@ -1,0 +1,39 @@
+import asset_health pieces (this process, warm disk cache): 43.8 s
+generate_fleet 1 pump 120 d: 0.29 s
+asset PMP-01 rows 2857 cols ['timestamp', 'load_pct', 'speed_rpm', 'ambient_c', 'vib_rms', 'vib_band_low']...
+failure events: [('PMP-01', 'bearing_spall')]
+run_asset total (best of 3): 1.69 s
+  stage ingest_asset:      0.11 s
+  stage build_features:    0.68 s
+  stage detect_asset:      0.76 s
+analyse_run (alerts + RUL + WO): 0.09 s
+run_asset if_trees=10: 1.46 s
+run_asset as_of=0.25 of record (29 d): 1.19 s
+run_asset as_of=0.50 of record (59 d): 1.52 s
+run_asset as_of=0.75 of record (89 d): 1.65 s
+run_asset as_of=1.00 of record (119 d): 1.61 s
+cadence 2 h: run_asset 1.40 s, blocked=False, fused valid=684
+cadence 4 h: run_asset 0.95 s, blocked=False, fused valid=0
+         760049 function calls (750112 primitive calls) in 2.767 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1465 to 14 due to restriction <14>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    2.785    2.785 <venv>\Lib\site-packages\asset_health\pipeline.py:75(run_asset)
+        2    0.003    0.002    1.338    0.669 <venv>\Lib\site-packages\asset_health\features\build.py:66(build_features)
+        2    0.001    0.001    1.241    0.620 <venv>\Lib\site-packages\asset_health\detect\ensemble.py:42(detect_asset)
+   189/99    0.006    0.000    1.075    0.011 <venv>\Lib\site-packages\sklearn\base.py:1381(wrapper)
+        1    0.005    0.005    0.699    0.699 <venv>\Lib\site-packages\asset_health\features\regime.py:101(fit)
+        1    0.001    0.001    0.687    0.687 <venv>\Lib\site-packages\asset_health\detect\iforest.py:55(fit_forest)
+        3    0.004    0.001    0.614    0.205 <venv>\Lib\site-packages\sklearn\ensemble\_iforest.py:297(fit)
+        6    0.000    0.000    0.575    0.096 <venv>\Lib\site-packages\sklearn\utils\parallel.py:54(__call__)
+        6    0.000    0.000    0.575    0.096 <venv>\Lib\site-packages\joblib\parallel.py:1995(__call__)
+      105    0.001    0.000    0.574    0.005 <venv>\Lib\site-packages\joblib\parallel.py:1914(_get_sequential_output)
+       93    0.009    0.000    0.566    0.006 <venv>\Lib\site-packages\sklearn\utils\parallel.py:140(__call__)
+        3    0.000    0.000    0.525    0.175 <venv>\Lib\site-packages\sklearn\ensemble\_bagging.py:397(_fit)
+        3    0.005    0.002    0.518    0.173 <venv>\Lib\site-packages\sklearn\ensemble\_bagging.py:107(_parallel_build_estimators)
+      576    0.030    0.000    0.395    0.001 <venv>\Lib\site-packages\sklearn\utils\validation.py:733(check_array)
+
+
+
