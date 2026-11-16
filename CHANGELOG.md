@@ -10,12 +10,17 @@ All notable changes to this project are recorded here. The format follows
   for bit, and the last bit of exp and log can differ between platforms. The counts and the
   provider state are now compared on every platform and the hash only on Windows. No code under
   `closed_loop/`, no result and no number in the README changed.
+- CI on Linux: the CMA-ES test on a planted violation asked for at least 2 of seeds 3000 to 3009,
+  and which seeds succeed depends on the machine (0 of 10 on one Linux host, 3 of 10 on another,
+  5 of 10 on Windows, same versions). It now asks for at least 15 of seeds 3000 to 3099; the
+  machines checked give 25 to 38, and random search 0. Test only.
 
-### Known issue
-- On Linux with Python 3.11 (numpy 2.4.6, scipy 1.17.1), `test_cma_es_reaches_it_within_200_evaluations_on_some_seeds_and_random_search_on_none`
-  fails: CMA-ES reached the planted violation on 0 of 10 seeds, against 5 of 10 on Windows with
-  the same versions. Under investigation. The README now says the two full runs were on one Windows
-  laptop and have not been rerun elsewhere.
+### Documentation
+- New [docs/PLATFORMS.md](docs/PLATFORMS.md): C-SEARCH recomputed on Linux with the published seeds.
+  21 of its 25 records are identical. CMA-ES inside R_in differs: a contract failure in 7 of 10
+  runs on Linux against 6 of 10 on Windows, 79.9 evaluations to the first against 97.0. Random
+  search, every R_out record, the defect counts and the C-SEARCH verdict (inconclusive) are the
+  same. The README and the report keep the Windows numbers and now say so.
 
 ## [0.1.0] - 2026-11-15
 

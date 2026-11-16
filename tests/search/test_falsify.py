@@ -533,7 +533,12 @@ class TestTheOptimiserReachesWhatTheNominalScenarioDoesNot:
     def test_cma_es_reaches_it_within_200_evaluations_on_some_seeds_and_random_search_on_none(
         self,
     ) -> None:
-        seeds = range(3000, 3010)
+        # Which seeds succeed depends on the machine: CMA-ES takes eigenvectors of its covariance,
+        # and different LAPACK builds and CPUs return different (equally valid) bases, so the
+        # sampled points differ. Over these 100 seeds CMA-ES found the corner on 25 to 38 on the
+        # machines checked (Windows and Linux, numpy 2.4 and 2.5); random search on none. So the
+        # test checks the rate over many seeds, not which seeds.
+        seeds = range(3000, 3100)
         cma = [
             falsify_detailed(target_arm, "in", "cma", 200, s, runner=slope_runner).run
             for s in seeds
@@ -543,7 +548,7 @@ class TestTheOptimiserReachesWhatTheNominalScenarioDoesNot:
             for s in seeds
         ]
         found_cma = [r.first_violation_eval for r in cma if r.first_violation_eval is not None]
-        assert len(found_cma) >= 2, found_cma  # 3 of 10 when this was written: slow, not fast
+        assert len(found_cma) >= 15, len(found_cma)  # slow, not fast
         assert all(f <= 200 for f in found_cma)
         assert all(r.first_violation_eval is None for r in rnd)
         # and what it found is a point that really violates
